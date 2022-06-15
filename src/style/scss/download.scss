@@ -1,0 +1,31 @@
+body {
+	background-image: url('/img/background');
+}
+
+.container-button-menu {
+
+	width: 120px;
+	height: 31px;
+	margin-left: 20px;
+	margin-top: 25px;
+
+	.img-menu {
+		position: relative;
+		display: inline-block;
+		width: 36px;
+		height: 31px;
+		left: 0px;
+		top: 0px;
+	}
+	
+	.text-menu {
+		position: relative;
+		display: inline-block;
+		width: 74px;
+		height: 20px;
+		left: 10px;
+		top: 0px;
+		font-size: 22px;
+		color: #FFFFFF;
+	}
+}
