@@ -20,8 +20,20 @@ app.get('/img/menu', function (request, response) {
     response.sendFile(__dirname + '/src/images/menu.png');
 });
 
+app.get('/img/android', function (request, response) {
+    response.sendFile(__dirname + '/src/images/android.png');
+});
+
 app.get('/img/background', function (request, response) {
     response.sendFile(__dirname + '/src/images/bg.png');
+});
+
+app.get('/files/apk/habitude', function (request, response) {
+    response.sendFile(__dirname + '/src/files/habitude.apk');
+});
+
+app.get('/fonts/inter', function (request, response) {
+    response.sendFile(__dirname + '/src/fonts/inter.ttf');
 });
 
 app.set('port', (process.env.PORT || 80));
