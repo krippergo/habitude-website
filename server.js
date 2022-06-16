@@ -38,6 +38,6 @@ app.get('/fonts/inter', function (request, response) {
 
 app.set('port', (process.env.PORT || 80));
 
-app.listen(app.get('port'), function() {
-	console.log('Порт', app.get('port'), 'запущен');
+app.listen(app.get('port'), function () {
+    console.log('Порт', app.get('port'), 'запущен');
 });

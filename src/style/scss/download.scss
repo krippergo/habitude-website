@@ -1,12 +1,9 @@
+@import '_variables.scss';
+
 @font-face {
 	font-family: 'Inter';
 	src: url("/fonts/inter");
 }
-
-$tcolor: #FFFFFF;
-$bradius: 6px;
-$bgcolor: rgba(102, 252, 241, 0.35);
-$trans: All 0.5s ease;
 
 body {
 	background-image: url("/img/background");
