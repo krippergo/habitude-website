@@ -15,7 +15,29 @@ function goToTelegram() {
 
 function createMenu() {
 	var imgMenu = document.getElementById("img-menu");
-	imgMenu.style.transform = "rotate(6.29rad)";
-	imgMenu.style.transition = "All 1s ease"
-	
+	imgMenu.style.transform = "rotate(1rad)";
+	var menu = document.getElementById("menu");
+	menu.style.transform = "translationX(0%)";
+	var bgMenu = document.getElementById("bg-menu");
+	bgMenu.style.display = "block";
+}
+
+function createContactsMenu() {
+	var containerContacts = document.getElementById("container-contacts");
+	containerContacts.style.display = "block";
+}
+
+function deleteContactsMenu() {
+	var containerContacts = document.getElementById("container-contacts");
+	containerContacts.style.display = "none";
+}
+
+function deleteMenu() {
+	var menu = document.getElementById("menu");
+	menu.style.transform = "translationX(-100%)";
+	var bgMenu = document.getElementById("bg-menu");
+	bgMenu.style.display = "none";
+	var imgMenu = document.getElementById("img-menu");
+	imgMenu.style.transform = "rotate(0rad)";
+	imgMenu.style.transition = "All 0.5s ease";
 }

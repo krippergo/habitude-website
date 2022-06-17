@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="bg-menu" id="bg-menu">
-        <div class="menu" id="menu">
+        <div class="menu" id="menu" onmouseleave="deleteMenu()">
             <div onclick="goToHome()" class="selector">
                 <div class="selector-text">Домой</div>
             </div>
@@ -44,19 +44,21 @@
                 <div class="selector-text">Авторизоваться</div>
             </div>
             <div class="hr"></div>
-            <div id="container-contacts" onmouseover="createContactsMenu()">
+            <div id="container-contacts-menu" onmouseover="createContactsMenu()" onmouseleave="deleteContactsMenu()">
                 <div class="selector">
                     <div class="selector-text">Контакты</div>
                 </div>
                 <div class="hr"></div>
-                <div onclick="goToEmail()" class="selector">
-                    <div class="selector-text-two">Почта: <span>habitudeteam@gmail.com</span></div>
+                <div class="container-contacts" id="container-contacts">
+                    <div class="selector">
+                        <div class="selector-text-two">Почта: <span>habitudeteam@gmail.com</span></div>
+                    </div>
+                    <div class="hr"></div>
+                    <div onclick="goToTelegram()" class="selector">
+                        <div class="selector-text-two">Telegram-канал</div>
+                    </div>
+                    <div class="hr"></div>
                 </div>
-                <div class="hr"></div>
-                <div onclick="goToTelegram()" class="selector">
-                    <div class="selector-text-two">Telegram-канал</div>
-                </div>
-                <div class="hr"></div>
             </div>
             <div onclick="goToVersions()" class="selector">
                 <div class="selector-text">Версии приложения</div>
