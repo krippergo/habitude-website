@@ -24,6 +24,10 @@ app.get('/img/android', function (request, response) {
     response.sendFile(__dirname + '/src/images/android.png');
 });
 
+app.get('/img/telegram', function (request, response) {
+    response.sendFile(__dirname + '/src/images/telegram.png');
+});
+
 app.get('/img/background', function (request, response) {
     response.sendFile(__dirname + '/src/images/bg.png');
 });

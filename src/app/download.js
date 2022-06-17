@@ -8,3 +8,14 @@ function download_file() {
 	document.body.removeChild(link_url);
 	delete link_url;
 }
+
+function goToTelegram() {
+	window.open("https://t.me/quality_habitude", '_blank');
+}
+
+function createMenu() {
+	var imgMenu = document.getElementById("img-menu");
+	imgMenu.style.transform = "rotate(6.29rad)";
+	imgMenu.style.transition = "All 1s ease"
+	
+}

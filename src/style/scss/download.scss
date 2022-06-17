@@ -10,17 +10,15 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
+	height: 98vh;
 }
 
 .container-button-menu {
 	width: 120px;
-	height: 31px;
-	margin-left: 25px;
-	margin-top: 25px;
+	height: 81px;
+	align-items: center;
+	padding-left: 25px;
 	display: flex;
 	user-select: none;
 
@@ -32,7 +30,6 @@ body {
 		width: 36px;
 		height: 31px;
 		margin-left: 0px;
-		margin-top: 0px;
 		color: $tcolor;
 		user-select: none;
 	}
@@ -41,7 +38,6 @@ body {
 		width: 74px;
 		height: 20px;
 		margin-left: 10px;
-		margin-top: 6px;
 		font-family: 'Inter';
 		font-weight: 700;
 		font-size: 22px;
@@ -54,126 +50,202 @@ body {
 	}
 }
 
-.content-container {
-	width: 670px;
-	height: 281px;
-	margin-left: 305px;
-	margin-top: 208px;
+.container {
+	align-items: center;
+	display: flex;
+	height: 92%;
 
-	.title {
-		width: 670px;
-		height: 134px;
-		margin-left: 16px;
-		margin-top: 0px;
-		font-family: 'Inter';
-		font-weight: 700;
-		font-size: 143px;
-		line-height: 173px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		color: $tcolor;
-	}
+	.content-container {
+		width: 618px;
+		height: 282px;
+		margin: auto;
 
-	.subtitle {
-		width: 430px;
-		height: 20px;
-		margin-left: 116px;
-		margin-top: 0px;
-		font-family: 'Inter';
-		font-weight: 700;
-		font-size: 22px;
-		line-height: 27px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		color: $tcolor;
-	}
-
-	.buttons-container {
-		width: 538px;
-		height: 50px;
-		margin-left: 58px;
-		margin-top: 77px;
-		display: flex;
-
-		.button-android {
-			width: 217px;
-			height: 50px;
-			margin-left: 0px;
+		.title {
+			width: 617px;
+			height: 134px;
+			margin: auto;
 			margin-top: 0px;
+			font-family: 'Inter';
+			font-weight: 700;
+			font-size: 143px;
+			line-height: 173px;
 			display: flex;
-			background: $bgcolor;
-			border-radius: $bradius;
-
-			&:hover {
-				cursor: pointer;
-				background: #66FCF1;
-				-webkit-transition: $trans;
-				-moz-transition: $trans;
-				-o-transition: $trans;
-				-ms-transition: $trans;
-				transition: $trans;
-			}
-
-			.img-android {
-				width: 36px;
-				height: 36px;
-				margin-left: 7px;
-				margin-top: 7px;
-				user-select: none;
-			}
-
-			.text-android {
-				width: 150px;
-				height: 30px;
-				margin-left: 12px;
-				margin-top: 10px;
-				font-family: 'Inter';
-				font-weight: 700;
-				font-size: 28px;
-				line-height: 34px;
-				display: flex;
-				align-items: center;
-				text-align: center;
-				color: $tcolor;
-				user-select: none;
-			}
+			align-items: center;
+			text-align: center;
+			color: $tcolor;
 		}
 
-		.button-website {
-			width: 242px;
-			height: 50px;
-			margin-left: 79px;
+		.subtitle {
+			width: 416px;
+			height: 30px;
+			margin: auto;
 			margin-top: 0px;
-			background: $bgcolor;
-			border-radius: $bradius;
+			font-family: 'Inter';
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 27px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: $tcolor;
+		}
 
-			&:hover {
-				cursor: pointer;
-				background: #66FCF1;
-				-webkit-transition: $trans;
-				-moz-transition: $trans;
-				-o-transition: $trans;
-				-ms-transition: $trans;
-				transition: $trans;
+		.buttons-container {
+			width: 470px;
+			height: 50px;
+			margin: auto;
+			margin-top: 67px;
+			display: flex;
+
+			.button-android {
+				width: 170px;
+				height: 50px;
+				margin-left: 0px;
+				align-items: center;
+				display: flex;
+				background: $bgcolor;
+				border-radius: $bradius;
+
+				&:hover {
+					cursor: pointer;
+					background: #66FCF1;
+					transition: $trans;
+				}
+
+				.img-android {
+					width: 36px;
+					height: 36px;
+					margin-left: 7px;
+					user-select: none;
+				}
+
+				.text-android {
+					width: 103px;
+					height: 30px;
+					margin-left: 12px;
+					font-family: 'Inter';
+					font-weight: 700;
+					font-size: 28px;
+					line-height: 34px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					color: $tcolor;
+					user-select: none;
+				}
 			}
 
-			.text-website {
-				width: 212px;
-				height: 48px;
-				margin-left: 15px;
-				margin-top: 1px;
-				font-family: 'Inter';
-				font-weight: 700;
-				font-size: 20px;
-				line-height: 24px;
-				display: flex;
+			.button-telegram {
+				width: 189px;
+				height: 50px;
+				margin-left: 110px;
 				align-items: center;
-				text-align: center;
-				color: $tcolor;
-				user-select: none;
+				display: flex;
+				background: $bgcolor;
+				border-radius: $bradius;
+
+				&:hover {
+					cursor: pointer;
+					background: #66FCF1;
+					transition: $trans;
+				}
+
+				.img-telegram {
+					width: 36px;
+					height: 36px;
+					margin-left: 7px;
+					user-select: none;
+				}
+
+				.text-android {
+					width: 122px;
+					height: 36px;
+					margin-left: 12px;
+					font-family: 'Inter';
+					font-weight: 700;
+					font-size: 28px;
+					line-height: 34px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					color: $tcolor;
+					user-select: none;
+				}
 			}
 		}
 	}
+}
+
+.bg-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 358px;
+		height: 100%;
+		background: $tcolor;
+	}
+}
+
+.selector-text {
+	margin-left: 6px;
+	padding-top: 21px;
+	width: 350px;
+	height: 28px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	color: #000000;
+	user-select: none;
+}
+
+.selector-text-two {
+	margin-left: 6px;
+	padding-top: 21px;
+	width: 350px;
+	height: 28px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 27px;
+	color: #000000;
+	user-select: none;
+
+	span {
+		user-select: all;
+	}
+}
+
+.container-contacts {}
+
+.selector {
+	background: #FFFFFF;
+	width: 358px;
+	height: 70px;
+	margin-top: 0px;
+	margin-left: 0px;
+
+	&:hover {
+		cursor: pointer;
+		background: #C5C6C7;
+		transition: $trans;
+	}
+}
+
+.hr {
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 358px;
+	height: 2px;
+	background: #C5C6C7;
 }

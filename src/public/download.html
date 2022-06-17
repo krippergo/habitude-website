@@ -10,20 +10,56 @@
 </head>
 
 <body>
-    <div class="container-button-menu">
-        <img src="/img/menu" alt="-" class="img-menu">
+    <div class="container-button-menu" onmouseover="createMenu()">
+        <img src="/img/menu" alt="-" class="img-menu" id="img-menu">
         <div class="text-menu">МЕНЮ</div>
     </div>
-    <div class="content-container">
-        <div class="title">Habitude</div>
-        <div class="subtitle">Формируй привычки легко с Habitude!</div>
-        <div class="buttons-container">
-            <div class="button-android" onclick="download_file()">
-                <img src="/img/android" alt="-" class="img-android">
-                <div class="text-android">АНДРОИД</div>
+    <div class="container">
+        <div class="content-container">
+            <div class="title">Habitude</div>
+            <div class="subtitle">Формируй привычки легко с Habitude!</div>
+            <div class="buttons-container">
+                <div class="button-android" onclick="download_file()">
+                    <img src="/img/android" alt="-" class="img-android">
+                    <div class="text-android">Android</div>
+                </div>
+                <div class="button-telegram" onclick="goToTelegram()">
+                    <img src="/img/telegram" alt="-" class="img-telegram">
+                    <div class="text-android">Telegram</div>
+                </div>
             </div>
-            <div class="button-website">
-                <div class="text-website">ПРОДОЛЖТЬ НА САЙТЕ</div>
+        </div>
+    </div>
+    <div class="bg-menu" id="bg-menu">
+        <div class="menu" id="menu">
+            <div onclick="goToHome()" class="selector">
+                <div class="selector-text">Домой</div>
+            </div>
+            <div class="hr"></div>
+            <div onclick="goToReg()" class="selector">
+                <div class="selector-text">Зарегистрироваться</div>
+            </div>
+            <div class="hr"></div>
+            <div onclick="goToLogin()" class="selector">
+                <div class="selector-text">Авторизоваться</div>
+            </div>
+            <div class="hr"></div>
+            <div id="container-contacts" onmouseover="createContactsMenu()">
+                <div class="selector">
+                    <div class="selector-text">Контакты</div>
+                </div>
+                <div class="hr"></div>
+                <div onclick="goToEmail()" class="selector">
+                    <div class="selector-text-two">Почта: <span>habitudeteam@gmail.com</span></div>
+                </div>
+                <div class="hr"></div>
+                <div onclick="goToTelegram()" class="selector">
+                    <div class="selector-text-two">Telegram-канал</div>
+                </div>
+                <div class="hr"></div>
+            </div>
+            <div onclick="goToVersions()" class="selector">
+                <div class="selector-text">Версии приложения</div>
             </div>
         </div>
     </div>
