@@ -55,7 +55,7 @@ body {
 .container {
 	align-items: center;
 	display: flex;
-	height: 92%;
+	height: 92vh;
 
 	.content-container {
 		width: 618px;
@@ -178,24 +178,14 @@ body {
 	}
 }
 
-.bg-menu {
+.menu {
 	position: fixed;
 	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	display: none;
-	background: rgba(0, 0, 0, 0.7);
-
-	.menu {
-		position: fixed;
-		top: 0;
-		left: 0px;
-		transform: translationX(-100%);
-		bottom: 0;
-		width: 358px;
-		background: $tcolor;
-	}
+	left: -360px;
+	width: 358px;
+	height: 100vh;
+	background: $tcolor;
+	box-shadow: 6px 0px 2px rgba(0, 0, 0, 0.25);
 }
 
 .selector-text {
@@ -254,4 +244,255 @@ body {
 	width: 358px;
 	height: 2px;
 	background: #C5C6C7;
+}
+
+.bg-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.7);
+
+	.registration {
+		margin: auto;
+		display: none;
+		width: 366px;
+		height: 432px;
+		background: $tcolor;
+		border-radius: $bradius;
+
+		.exit {
+			width: 24px;
+			height: 24px;
+			margin-left: 339px;
+			margin-top: 3px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.text {
+			width: fit-content;
+			height: 22px;
+			padding-left: 22px;
+			padding-top: 18px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			color: #000000;
+		}
+
+		.input {
+			width: 314px;
+			height: 50px;
+			margin-left: 22px;
+			margin-top: 0px;
+			background: $tcolor;
+			border: 2px solid #1F2833;
+			border-radius: 6px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			align-items: center;
+			color: #000000;
+		}
+
+		.error {
+			width: fit-content;
+			height: 22px;
+			margin-left: 22px;
+			margin-top: 4px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			color: #45A29E;
+		}
+
+		.button {
+			width: 322px;
+			height: 54px;
+			margin-left: 22px;
+			margin-top: 4px;
+			background: rgba(31, 40, 51, 0.75);
+			border-radius: 6px;
+			display: flex;
+			align-items: center;
+
+			&:hover {
+				cursor: pointer;
+				background: #1F2833;
+				transition: $trans;
+			}
+
+			.sign_up {
+				margin: auto;
+				width: 176px;
+				height: 27px;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 27px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				color: #FFFFFF;
+				user-select: none;
+			}
+		}
+
+		.sign_in-text {
+			width: 143px;
+			height: 22px;
+			margin: auto;
+			margin-top: 6px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #000000;
+			user-select: none;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.sign-in {
+		margin: auto;
+		width: 366px;
+		height: 338px;
+		background: $tcolor;
+		border-radius: $bradius;
+		display: none;
+
+		.exit {
+			width: 24px;
+			height: 24px;
+			margin-left: 339px;
+			margin-top: 3px;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		.text {
+			width: fit-content;
+			height: 22px;
+			padding-left: 22px;
+			padding-top: 18px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			color: #000000;
+		}
+
+		.input {
+			width: 314px;
+			height: 50px;
+			margin-left: 22px;
+			margin-top: 0px;
+			background: $tcolor;
+			border: 2px solid #1F2833;
+			border-radius: 6px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			align-items: center;
+			color: #000000;
+		}
+
+		.error {
+			width: fit-content;
+			height: 22px;
+			margin-left: 22px;
+			margin-top: 4px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			color: #45A29E;
+		}
+
+		.button {
+			width: 322px;
+			height: 54px;
+			margin-left: 22px;
+			margin-top: 4px;
+			background: rgba(31, 40, 51, 0.75);
+			border-radius: 6px;
+			display: flex;
+			align-items: center;
+
+			&:hover {
+				cursor: pointer;
+				background: #1F2833;
+				transition: $trans;
+			}
+
+			.sign_in-text {
+				margin: auto;
+				width: fit-content;
+				height: 27px;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 27px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				color: #FFFFFF;
+				user-select: none;
+			}
+		}
+
+		.sign_up {
+			width: fit-content;
+			height: 22px;
+			margin: auto;
+			margin-top: 6px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #000000;
+			user-select: none;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }

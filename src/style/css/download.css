@@ -70,7 +70,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 92%;
+  height: 92vh;
 }
 .container .content-container {
   width: 618px;
@@ -223,25 +223,15 @@ body {
           user-select: none;
 }
 
-.bg-menu {
+.menu {
   position: fixed;
   top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: none;
-  background: rgba(0, 0, 0, 0.7);
-}
-.bg-menu .menu {
-  position: fixed;
-  top: 0;
-  left: 0px;
-  -webkit-transform: translationX(-100%);
-      -ms-transform: translationX(-100%);
-          transform: translationX(-100%);
-  bottom: 0;
+  left: -360px;
   width: 358px;
+  height: 100vh;
   background: #FFFFFF;
+  -webkit-box-shadow: 6px 0px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 0px 2px rgba(0, 0, 0, 0.25);
 }
 
 .selector-text {
@@ -308,4 +298,303 @@ body {
   width: 358px;
   height: 2px;
   background: #C5C6C7;
+}
+
+.bg-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+.bg-menu .registration {
+  margin: auto;
+  display: none;
+  width: 366px;
+  height: 432px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.bg-menu .registration .exit {
+  width: 24px;
+  height: 24px;
+  margin-left: 339px;
+  margin-top: 3px;
+}
+.bg-menu .registration .exit:hover {
+  cursor: pointer;
+}
+.bg-menu .registration .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 22px;
+  padding-left: 22px;
+  padding-top: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+}
+.bg-menu .registration .input {
+  width: 314px;
+  height: 50px;
+  margin-left: 22px;
+  margin-top: 0px;
+  background: #FFFFFF;
+  border: 2px solid #1F2833;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+.bg-menu .registration .error {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 22px;
+  margin-left: 22px;
+  margin-top: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #45A29E;
+}
+.bg-menu .registration .button {
+  width: 322px;
+  height: 54px;
+  margin-left: 22px;
+  margin-top: 4px;
+  background: rgba(31, 40, 51, 0.75);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bg-menu .registration .button:hover {
+  cursor: pointer;
+  background: #1F2833;
+  -webkit-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+.bg-menu .registration .button .sign_up {
+  margin: auto;
+  width: 176px;
+  height: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.bg-menu .registration .sign_in-text {
+  width: 143px;
+  height: 22px;
+  margin: auto;
+  margin-top: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.bg-menu .registration .sign_in-text:hover {
+  cursor: pointer;
+}
+.bg-menu .sign-in {
+  margin: auto;
+  width: 366px;
+  height: 338px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  display: none;
+}
+.bg-menu .sign-in .exit {
+  width: 24px;
+  height: 24px;
+  margin-left: 339px;
+  margin-top: 3px;
+}
+.bg-menu .sign-in .exit:hover {
+  cursor: pointer;
+}
+.bg-menu .sign-in .text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 22px;
+  padding-left: 22px;
+  padding-top: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+}
+.bg-menu .sign-in .input {
+  width: 314px;
+  height: 50px;
+  margin-left: 22px;
+  margin-top: 0px;
+  background: #FFFFFF;
+  border: 2px solid #1F2833;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+.bg-menu .sign-in .error {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 22px;
+  margin-left: 22px;
+  margin-top: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #45A29E;
+}
+.bg-menu .sign-in .button {
+  width: 322px;
+  height: 54px;
+  margin-left: 22px;
+  margin-top: 4px;
+  background: rgba(31, 40, 51, 0.75);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bg-menu .sign-in .button:hover {
+  cursor: pointer;
+  background: #1F2833;
+  -webkit-transition: All 0.5s ease;
+  -o-transition: All 0.5s ease;
+  transition: All 0.5s ease;
+}
+.bg-menu .sign-in .button .sign_in-text {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.bg-menu .sign-in .sign_up {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 22px;
+  margin: auto;
+  margin-top: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.bg-menu .sign-in .sign_up:hover {
+  cursor: pointer;
 }
