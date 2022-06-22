@@ -4,6 +4,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const md5 = require('md5');
 const moment = require('moment');
+const { send } = require('process');
 
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
 
@@ -104,12 +105,24 @@ app.get('/', function (request, response) {
     response.sendFile(__dirname + '/src/public/download.html');
 });
 
+app.get('/versions', function (request, response) {
+    response.sendFile(__dirname + '/src/public/versions.html');
+});
+
 app.get('/css', function (request, response) {
     response.sendFile(__dirname + '/src/style/css/download.css');
 });
 
+app.get('/css/versions', function (request, response) {
+    response.sendFile(__dirname + '/src/style/css/versions.css');
+});
+
 app.get('/js', function (request, response) {
     response.sendFile(__dirname + '/src/app/download.js');
+});
+
+app.get('/js/versions', function (request, response) {
+    response.sendFile(__dirname + '/src/app/versions.js');
 });
 
 app.get('/img', function (request, response) {
@@ -229,7 +242,33 @@ app.post('/authorization', urlencodedParser, function (request, response, data) 
     }
 });
 
-app.get('/profile', function (request, response) { });
+app.get('/verification', function (request, response) {
+    var userLogin = false;
+    for (a = 0; a < users.length; a++) {
+        var login_file = users[a].login;
+        if (login_file === request.session.login) {
+            userLogin = true;
+            break;
+        }
+    }
+    var obj;
+    if (userLogin) {
+        obj = {
+            verification: "true"
+        }
+        response.json(obj);
+    } else {
+        obj = {
+            verification: "false"
+        }
+        response.json(obj);
+    }
+});
+
+app.get('/exit-account', function (request, response) {
+    request.session.destroy();
+    response.sendStatus(200);
+});
 
 app.set('port', (process.env.PORT || 80));
 
