@@ -12,13 +12,14 @@ body {
 }
 
 .container-button-menu {
+  position: absolute;
   width: 120px;
   height: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 25px;
-  padding-left: 25px;
+  top: 25px;
+  left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +230,7 @@ body {
 
 .menu {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: -360px;
   width: 358px;
   height: 100vh;

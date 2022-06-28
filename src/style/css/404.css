@@ -63,87 +63,90 @@ body {
           user-select: none;
 }
 
-.versions-container {
-  min-width: 680px;
-  min-height: 100px;
+.container {
   position: absolute;
-  left: 100px;
-  top: 120px;
-  right: 100px;
-  bottom: 80px;
-  background: #C5C6C7;
-  border-radius: 6px;
-}
-.versions-container .version .version-text {
-  width: 166px;
-  height: 20px;
-  margin-left: 18px;
-  margin-top: 18px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  display: inline-block;
-  color: #0B0C10;
-}
-.versions-container .version .data-text {
-  width: 302px;
-  height: 20px;
-  margin-left: 10px;
-  margin-top: 18px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  display: inline-block;
-  color: #0B0C10;
-}
-.versions-container .version .download-button {
-  position: absolute;
-  width: 154px;
-  height: 40px;
-  top: 10px;
-  right: 10px;
-  display: inline-block;
-  background: rgba(31, 40, 51, 0.75);
-  border-radius: 6px;
-}
-.versions-container .version .download-button:hover {
-  cursor: pointer;
-  background: #1F2833;
-  -webkit-transition: All 0.5s ease;
-  -o-transition: All 0.5s ease;
-  transition: All 0.5s ease;
-}
-.versions-container .version .download-button .download-text {
-  width: 110px;
-  height: 20px;
-  margin-left: 26px;
-  margin-top: 11px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 68px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container .error-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+.container .error-container .text-error {
+  width: 378px;
+  height: 74px;
+  margin-left: 58px;
+  margin-top: 140px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 97px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #FFFFFF;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
-.versions-container .version .hr-for-versions-container {
-  height: 2px;
+.container .error-container .text-404 {
+  width: 451px;
+  height: 173px;
+  margin-left: 20px;
+  margin-top: 140px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 220px;
+  line-height: 266px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+.container .error-container .text-facts {
   margin-left: 0px;
-  margin-top: 16px;
-  background: #1F2833;
+  margin-top: 140px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+.container .error-container .text-facts ul {
+  margin-top: 0px;
+}
+.container .error-container .text-facts li {
+  width: 880px;
+  height: 79px;
+  margin-top: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 41px;
+  color: #FFFFFF;
 }
 
 .menu {

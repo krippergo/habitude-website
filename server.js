@@ -117,12 +117,20 @@ app.get('/css/versions', function (request, response) {
     response.sendFile(__dirname + '/src/style/css/versions.css');
 });
 
+app.get('/css/404', function (request, response) {
+    response.sendFile(__dirname + '/src/style/css/404.css');
+});
+
 app.get('/js', function (request, response) {
     response.sendFile(__dirname + '/src/app/download.js');
 });
 
 app.get('/js/versions', function (request, response) {
     response.sendFile(__dirname + '/src/app/versions.js');
+});
+
+app.get('/js/404', function (request, response) {
+    response.sendFile(__dirname + '/src/app/404.js');
 });
 
 app.get('/img', function (request, response) {
@@ -268,6 +276,10 @@ app.get('/verification', function (request, response) {
 app.get('/exit-account', function (request, response) {
     request.session.destroy();
     response.sendStatus(200);
+});
+
+app.get('*', function (request, response) {
+    response.sendFile(__dirname + '/src/public/404.html');
 });
 
 app.set('port', (process.env.PORT || 80));

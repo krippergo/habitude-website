@@ -15,11 +15,12 @@ body {
 }
 
 .container-button-menu {
+	position: absolute;
 	width: 120px;
 	height: 32px;
 	align-items: center;
-	padding-top: 25px;
-	padding-left: 25px;
+	top: 25px;
+	left: 25px;
 	display: flex;
 	user-select: none;
 
@@ -184,7 +185,7 @@ body {
 
 .menu {
 	position: fixed;
-	top: 0;
+	top: 0px;
 	left: -360px;
 	width: 358px;
 	height: 100vh;

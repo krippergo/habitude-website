@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="/img">
+	<title id="title">Habitude: ошибка 404</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="/css/404">
+</head>
+
+<body>
+	<div class="container-button-menu" onmouseover="createMenu()">
+		<img src="/img/menu" alt="-" class="img-menu" id="img-menu">
+		<div class="text-menu">МЕНЮ</div>
+	</div>
+	<div class="container">
+		<div class="error-container">
+			<div class="text-error">ОШИБКА</div>
+			<div class="text-404">404</div>
+			<div class="text-facts">
+				Упс! Что-то пошло не так
+				<ul>
+					<li>Либо страница, которую вы ищите была удалена и её больше нет</li>
+					<li>Либо вы ошиблись в написании URL-адреса сайта</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bg-menu" id="bg-menu">
+		<div class="registration" id="registration">
+			<form>
+				<img src="/img/exit" class="exit" onclick="exit()">
+				<div class="text">ЛОГИН</div>
+				<input class="input" type="text" name="login" id="login" />
+				<div class="text">ПАРОЛЬ</div>
+				<input class="input" type="password" name="password" id="password" />
+				<div class="text">ПОДТВЕРДИТЕ ПАРОЛЬ</div>
+				<input class="input" type="password" id="confirm" />
+				<div class="error" id="text-error"></div>
+				<div class="button" onclick="verification()">
+					<div class="sign_up">создать аккаунт</div>
+				</div>
+				<div class="sign_in-text" onclick="goToLogin()">авторизоваться</div>
+			</form>
+		</div>
+		<div class="sign-in" id="log-in">
+			<form>
+				<img src="/img/exit" class="exit" onclick="exit()">
+				<div class="text">ЛОГИН</div>
+				<input class="input" type="text" name="login" id="login-sign-in" />
+				<div class="text">ПАРОЛЬ</div>
+				<input class="input" type="password" name="password" id="password-sign-in" />
+				<div class="error" id="text-error-sign-in"></div>
+				<div class="button" onclick="verificationLogin()">
+					<div class="sign_in-text">авторизоваться</div>
+				</div>
+				<div class="sign_up" onclick="goToReg()">зарегистрироваться</div>
+			</form>
+		</div>
+	</div>
+	<div class="menu" id="menuForUnregisteredUser" onmouseleave="deleteMenu()">
+		<div onclick="goToHome()" class="selector">
+			<div class="selector-text">Домой</div>
+		</div>
+		<div class="hr"></div>
+		<div onclick="goToReg()" class="selector">
+			<div class="selector-text">Зарегистрироваться</div>
+		</div>
+		<div class="hr"></div>
+		<div onclick="goToLogin()" class="selector">
+			<div class="selector-text">Авторизоваться</div>
+		</div>
+		<div class="hr"></div>
+		<div id="container-contacts-menu" onmouseover="createContactsMenu()" onmouseleave="deleteContactsMenu()">
+			<div class="selector">
+				<div class="selector-text">Контакты</div>
+			</div>
+			<div class="hr"></div>
+			<div class="container-contacts" id="container-contacts">
+				<div class="selector">
+					<div class="selector-text-two">Почта: <span>habitudeteam@gmail.com</span></div>
+				</div>
+				<div class="hr"></div>
+				<div onclick="goToTelegram()" class="selector">
+					<div class="selector-text-two">Telegram-канал</div>
+				</div>
+			</div>
+		</div>
+		<div onclick="goToVersions()" class="selector">
+			<div class="selector-text">Версии андроид приложения</div>
+		</div>
+	</div>
+	<div class="menu" id="menuForRegisteredUser" onmouseleave="deleteMenu()">
+		<div onclick="goToHome()" class="selector">
+			<div class="selector-text">Домой</div>
+		</div>
+		<div class="hr"></div>
+		<div id="container-account-menu" onmouseover="createAccountMenu()" onmouseleave="deleteAccountMenu()">
+			<div class="selector">
+				<div class="selector-text">Аккаунт</div>
+			</div>
+			<div class="hr"></div>
+			<div class="container-account" id="container-account">
+				<div onclick="exitAccount()" class="selector">
+					<div class="selector-text-two">Выйти из аккаунта</div>
+				</div>
+			</div>
+		</div>
+		<div onclick="goToHabit()" class="selector">
+			<div class="selector-text">Привычка</div>
+		</div>
+		<div class="hr"></div>
+		<div id="container-contacts-menu-reg" onmouseover="createContactsMenu()" onmouseleave="deleteContactsMenu()">
+			<div class="selector">
+				<div class="selector-text">Контакты</div>
+			</div>
+			<div class="hr"></div>
+			<div class="container-contacts" id="container-contacts-reg">
+				<div class="selector">
+					<div class="selector-text-two">Почта: <span>habitudeteam@gmail.com</span></div>
+				</div>
+				<div class="hr"></div>
+				<div onclick="goToTelegram()" class="selector">
+					<div class="selector-text-two">Telegram-канал</div>
+				</div>
+			</div>
+		</div>
+		<div onclick="goToVersions()" class="selector">
+			<div class="selector-text">Версии андроид приложения</div>
+		</div>
+	</div>
+	<script src="/js/404"></script>
+</body>
+
+</html>
